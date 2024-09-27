@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Aeromodelos - Aeromodelismo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7ff;
+        }
+
+        header {
+            background-color: #b3e0ff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #80ccff;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #b3e0ff;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .filter {
+            margin-bottom: 20px;
+        }
+
+        .model {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: calc(33% - 40px);
+            vertical-align: top;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #80ccff;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modelos de Aeromodelos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="planador.html">Meu Primeiro Planador</a></li>
+            <li><a href="teste.html">Teste</a></li>
+            <li><a href="reparos.html">Reparos</a></li>
+            <li><a href="tabela.html">Tabela Comparativa</a></li>
+            <li><a href="produtos.html">Produto</a></li>
+            <li><a href="orcamento.html">Orçamento</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+           
+        </ul>
+    </nav>
+
+    <main>
+        <div class="filter">
+            <label for="preco">Filtrar por preço:</label>
+            <select id="preco">
+                <option value="todos">Todos</option>
+                <option value="menos_50">Menos de R$50</option>
+                <option value="50_100">R$50 a R$100</option>
+                <option value="mais_100">Mais de R$100</option>
+            </select>
+        </div>
+
+        <div id="modelos-container">
+            <div class="model">
+                <img src="imagem/modelo1.png" alt="Modelo 1">
+                <h3>Modelo 1</h3>
+                <p>Preço: R$100</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="model">
+                <img src="imagem/modelo2.png" alt="Modelo 2">
+                <h3>Modelo 2</h3>
+                <p>Preço: R$175</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="model">
+                <img src="imagem/modelo3.png" alt="Modelo 3">
+                <h3>Modelo 3</h3>
+                <p>Preço: R$150</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>Vitória Saldanha Salatiel Rodrigues - RA: 5164120</p>
+    </footer>
+</body>
+</html>
+
